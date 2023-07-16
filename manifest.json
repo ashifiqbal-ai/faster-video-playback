@@ -1,0 +1,30 @@
+{
+    "name": "Faster Video Playback",
+    "short_name": "faster-video",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "minimum_chrome_version": "89",
+    "description": "Speed up or slow down video playbacks",
+    "homepage_url": "https://github.com/ashifiqbal-ai/faster-video-playback",
+    "icons": {
+      "16": "icons/icon16.png",
+      "24": "icons/icon24.png",
+      "32": "icons/icon32.png",
+      "64": "icons/icon64.png",
+      "128": "icons/icon128.png",
+      "256": "icons/icon256.png",
+      "512": "icons/icon512.png"
+    },
+    "content_scripts": [
+      {
+        "all_frames": true,
+        "matches": ["https://www.primevideo.com/*", "https://www.youtube.com/watch?*"],
+        "js": ["faster-video-playback.js"]
+      }
+    ],
+    "background": {
+      "service_worker": "service-worker.js"
+    },
+    "action": {}
+  }
+  
