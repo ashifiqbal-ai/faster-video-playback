@@ -18,7 +18,7 @@
     "content_scripts": [
       {
         "all_frames": true,
-        "matches": ["https://www.primevideo.com/*", "https://www.youtube.com/watch?*"],
+        "matches": ["https://www.primevideo.com/*", "https://www.youtube.com/watch?*", "https://www.udemy.com/*"],
         "js": ["faster-video-playback.js"]
       }
     ],
